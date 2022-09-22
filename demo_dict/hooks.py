@@ -94,9 +94,9 @@ app_license = "MIT"
 # ---------------
 # Override standard doctype classes
 
-# override_doctype_class = {
-# 	"ToDo": "custom_app.overrides.CustomToDo"
-# }
+override_doctype_class = {
+	"File": "demo_dict.overrides.file.File"
+}
 
 # Document Events
 # ---------------
@@ -139,9 +139,9 @@ app_license = "MIT"
 # Overriding Methods
 # ------------------------------
 #
-# override_whitelisted_methods = {
-# 	"frappe.desk.doctype.event.event.get_events": "demo_dict.event.get_events"
-# }
+override_whitelisted_methods = {
+	"frappe.core.api.file.create_new_folder": "demo_dict.api.create_new_folder"
+}
 #
 # each overriding function accepts a `data` argument;
 # generated from the base implementation of the doctype dashboard,
